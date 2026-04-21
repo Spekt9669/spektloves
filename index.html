@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Рузаны — с любовью</title>
+    <style>
+        :root {
+            --light-pink: #ffebee;
+            --soft-pink: #ffc1cc;
+            --rose: #ff8ab4;
+            --white: #ffffff;
+            --text-dark: #5a3a42;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--light-pink), var(--white));
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--rose);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--soft-pink);
+            font-style: italic;
+        }
+
+        /* Сердечки */
+        .heart {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: var(--rose);
+            transform: rotate(45deg);
+            border-radius: 50%;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: var(--rose);
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            left: -20px;
+        }
+
+        .heart::after {
+            top: -20px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: rotate(45deg) translate(0, 0); }
+            50% { transform: rotate(45deg) translate(20px, -20px); }
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 138, 180, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2 {
+            color: var(--rose);
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '❤️';
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            text-align: justify;
+            margin-bottom: 1.2rem;
+        }
+
+        .love-message {
+            font-size: 1.3rem;
+            line-height: 2;
+            color: var(--text-dark);
+        }
+
+        .signature-section {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .signature {
+            font-size: 1.8rem;
+            color: var(--rose);
+            font-weight: bold;
+            font-style: italic;
+            border-top: 2px dashed var(--soft-pink);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--soft-pink);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--soft-pink);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .love-message {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Сердечки на фоне -->
+    <div class="heart" style="top: 10%; left: 5%; animation-delay: 0s;"></div>
+    <div class="heart" style="top: 30%; right: 10%; animation-delay: -2s;"></div>
+    <div class="heart" style="bottom: 20%; left: 15%; animation-delay: -4s;"></div>
+    <div class="heart" style="bottom: 40%; right: 20%; animation-delay: -6s;"></div>
+
+    <header>
+        <h1>Моей любимой Рузане</h1>
+        <div class="subtitle">что не сделаешь ради любимой:)</div>
+    </header>
+
+    <main>
+        <section id="love-story">
+            <h2>Моя любовь к тебе</h2>
+            <div class="love-message">
+                <p>Кошечка моя ты самое чудесное, что произошло в моей жизни. Каждый день рядом с тобой наполнен особым теплом и нежностью. Когда я смотрю в твои глаза, мир вокруг становится ярче, а все проблемы отступают туда где их не видно.</p>
+                
+                <p>Я люблю в тебе все ведь все в тебе заставляет моё сердце биться чаще.особенно Люблю твой смех пох что он похож на чайку, он все равно звучит для меня как самая прекрасная музыка. Люблю твои объятия, в которых я чувствую себя самым счастливым человеком на свете.</p>
+                
+                <p>С тобой я понял, что такое настоящая любовь это когда хочешь делать человека счастливым просто потому, что он есть. Когда каждое мгновение рядом это подарок судьбы. Когда думаешь о ком‑то каждую секунду, даже во сне.</p>
+                
+                <p>Ты вдохновляешь меня быть лучше, добрее, внимательнее. Благодаря тебе я учусь видеть красоту в простых вещах и мелочах в утреннем солнце, в каплях дождя, потому что я знаю — скоро я увижу тебя.</p>
+                
+                <p>Спасибо, что ты есть. Спасибо за твою доброту, за твоё понимание, за твою любовь. Я буду беречь тебя всю жизнь, кис, и делать всё, чтобы ты улыбалась как можно чаще люблююю.</p>
+            </div>
+        </section>
+
+        <section id="signature">
+            <div class="signature-section">
+                <h2>С любовью, твой котик</h2>
+                <div style="height: 200px; border: 2px dashed var(--soft-pink; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--soft-pink); font-style: italic;">
+                    очень надеюсь что тебе понравилось то что я сделал, очен старался с созданием, далеко не просто сделать сайт более живым и интересным, спасибо что ты рядом, ради тебя я готов делать такие вещи
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      2096 от Spekt Для самой любимой девчулечкии ❤️
+    </footer>
+</body>
+</html>
